@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Search - Recruitment Solution</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="search.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Recruitment Solution</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="search-container">
+        <section id="search">
+          <h2 class="search-candidate-title">Candidate Search</h2>
+          <form>
+            <div class="form-group">
+              <label for="location">Location:</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Enter location"
+              />
+            </div>
+            <div class="form-group">
+              <label for="jobRole">Job Role:</label>
+              <select id="jobRole" name="jobRole">
+                <option value="">Select job role</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="manager">Manager</option>
+              </select>
+            </div>
+            <button type="submit" class="cta-button">Search</button>
+          </form>
+          <div id="candidateList">
+            <h3>Filtered Candidates</h3>
+            <ul id="candidates"></ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Recruitment Solution. All rights reserved.</p>
+    </footer>
+
+    <script src="search.js"></script>
+  </body>
+</html>
